@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Berana's Food</title>
+    <script src="https://kit.fontawesome.com/5e9d6db112.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div id="navbar" class="flex-col">
+        <div id="nav-name" class="v-center">
+            <img src="images/logo.png" alt="logo img">
+            <h2>Ian Berana</h2>
+        </div>
+        <div id="nav-links" class="flex-col">
+            <div class="v-center active"><i class="fa-solid fa-utensils"></i> <a> Favorite Food</a></div>
+            <div class="v-center"><i class="fa-solid fa-music"></i><a> Favorite Songs</a></div>
+            <div class="v-center"><i class="fa-solid fa-quote-left"></i><a> Favorite Quotes</a></div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Form -->
+        <form id="form" class="flex-col">
+            <h1>Add Food</h1>
+            <label>Food name:</label>
+            <input id="food" type="text" required>
+            <label>Description</label>
+            <input id="desc" type="text" required>
+            <label>Image URL</label>
+            <input id="img" type="text" required>
+            <label>Rank Number</label>
+            <input id="rank" type="number" required>
+            <div class="buttons">
+                <button id="submit" class="button" type="button">Submit</button>
+                <input id="reset" class="button" type="reset">
+            </div>
+
+        </form>
+
+        <!-- Previous Projects -->
+        <div id="food">
+            <h1>Foods</h1>
+            <div id="cards">
+
+                <!-- Hidden Template -->
+                <div class="card" style="display: none;">
+                    <img src="" alt="">
+                    <p class="title"></p>
+                    <p class="description"></p>
+                    <button class="button delete">Delete</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <aside>
+        <!-- Autobiography -->
+        <div id="ads">
+            <h1>Ads</h1>
+            <div class="ad">
+                <img src="https://images.everydayhealth.com/images/diet-nutrition/34da4c4e-82c3-47d7-953d-121945eada1e00-giveitup-unhealthyfood.jpg?sfvrsn=a31d8d32_1" alt="ad1">
+            </div>
+            <div class="ad">
+                <img src="https://www.eatright.org/-/media/images/eatright-landing-pages/foodgroupslp_804x482.jpg?as=0&w=967&rev=d0d1ce321d944bbe82024fff81c938e7&hash=E6474C8EFC5BE5F0DA9C32D4A797D10D" alt="ad2">
+            </div>
+            <div class="ad">
+                <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/04/strawberry-milk-splash.jpg" alt="ad3">
+            </div>
+        </div>
+    </aside>
+
+    <script type="text/javascript" src="/form.js"></script>
+
+    </body>
+</html>
